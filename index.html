@@ -1,0 +1,401 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+
+<html>
+<head>
+  <title>The Ghost Wolves</title> 
+  
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/ytchromeless.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/swfobject.js" type="text/javascript"></script> 
+  <script src="js/jquery.ytchromeless.js" type="text/javascript"></script>
+  
+  <script type="text/javascript"> 
+    $(document).ready(function() {
+      var vidurl = $('#vidurl').text();
+      $('a.video-link').attr('href', vidurl);
+      $('a.video-link').ytchromeless({
+        videoWidth  : '1000',
+        videoHeight : '600',
+        callback    : function() {
+          // Don't display controls until the movie is ready
+          $('a.play-pause').css({'z-index' : '1'});
+          return false;
+        }
+      });
+      $('.nav-cms').each(function() {
+        var url = $(this).text();
+        var name = $(this).attr('name');
+        $('a.' + name).attr('href', url);
+      });
+    });
+  </script>  
+  
+</head>
+
+<body>
+  <div id="container">
+      
+    <span class="cushycms-text" title="Youtube Video" id="vidurl" style="display:none;">https://www.youtube.com/watch?v=HRHVUwWj82U
+
+</span>
+    <!-- link gets replaced with a youtube player by ytchromeless -->
+    <a href="http://www.youtube.com/watch?v=9bD9JYVHYNU" class="video-link" style="display:none;">Watch The Ghost Wolves on Youtube!</a>
+
+    <img style="position:absolute" src="img/poster.png"/>
+
+    <span class="nav-cms cushycms-text" title="Music Link" name="music" style="display:none;">http://plowboyrecords.com/store/the-ghost-wolves</span>
+    <span class="nav-cms cushycms-text" title="News Link" name="news" style="display:none;">https://twitter.com/TheGhostWolves</span>
+    <span class="nav-cms cushycms-text" title="Bio Link" name="bio" style="display:none;">http://plowboyrecords.com/the-ghost-wolves</span>
+    <span class="nav-cms cushycms-text" title="Photos Link" name="photos" style="display:none;">http://instagram.com/theghostwolves</span>
+    <span class="nav-cms cushycms-text" title="Videos Link" name="videos" style="display:none;">http://www.youtube.com/theghostwolves</span>
+    <span class="nav-cms cushycms-text" title="Fans Link" name="fans" style="display:none;">https://www.facebook.com/TheGhostWolves</span>
+    <span class="nav-cms cushycms-text" title="Press Link" name="press" style="display:none;">http://www.theghostwolves.blogspot.com</span>
+    <span class="nav-cms cushycms-text" title="Store Link" name="store" style="display:none;">http://theghostwolves.bandcamp.com/merch</span>
+    
+    <ul class="menu" style="position:absolute; top:460px; left:145px;">
+      <li><a style="top :    7px; left :    0px;" class="music" title="Music" href="http://plowboyrecords.com/store/the-ghost-wolves/"></a></li>
+      <li><a style="top :  115px; left :   13px;" class="news" title="News" href="https://twitter.com/TheGhostWolves"></a></li>
+      <li><a style="top :  265px; left :    0px;" class="bio" title="Bio" href="http://plowboyrecords.com/the-ghost-wolves/"></a></li>
+      <li><a style="top :  345px; left :   25px;" class="photos" title="Photos" href="http://instagram.com/theghostwolves"></a></li>
+      <li><a style="top :   10px; left :  623px;" class="videos" title="Videos" href="http://www.youtube.com/theghostwolves"></a></li>
+      <li><a style="top :  117px; left :  625px;" class="fans" title="Fans" href="https://www.facebook.com/TheGhostWolves"></a></li>
+      <li><a style="top :  242px; left :  631px;" class="press" title="Press" href="http://www.theghostwolves.blogspot.com"></a></li>
+      <li><a style="top :  360px; left :  610px;" class="store" title="Store" href="http://theghostwolves.bandcamp.com/merch"></a></li>
+    </ul>
+    
+    <div class="showtimes cushycms" title="Upcoming Shows" style="position:absolute; top:1040px; left:250px;"><table>
+  <tbody>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Fri 5/2/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;"><a href="http://www.austinpsychfest.com/">Austin Psych Fest</a></span></td>
+      <td><span style="font-size:16px;">Austin, TX</span></td>
+      <td><span style="font-size:16px;">1pm - campground stage&nbsp;</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Sat 5/3/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Warehouse Live! FREE</span></td>
+      <td><span style="font-size:16px;">Houston, TX</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Sun 5/4/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;"><a href="https://www.facebook.com/events/428617150609278/">Boiled Owl Farts and Crafts Show</a></span></td>
+      <td><span style="font-size:16px;">Fort Worth, TX</span></td>
+      <td><span style="font-size:16px;">9pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Sat 5/24/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;"><a href="http://do512.com/events/2014/5/24/the-ghost-wolves-record-release-show">Holy Mountain - &#39;Man, Woman, Beast&#39; album release show!</a></span></td>
+      <td><span style="font-size:16px;">Austin, TX</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Mon 5/26/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Waterloo Records in-store performance </span></td>
+      <td><span style="font-size:16px;">Austin, TX</span></td>
+      <td><span style="font-size:16px;">5:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Fri 5/30/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Cactus Records in-store performance </span></td>
+      <td><span style="font-size:16px;">Houston, TX</span></td>
+      <td><span style="font-size:16px;">TBA</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Sat 5/31/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">The Bottletree</span></td>
+      <td><span style="font-size:16px;">Birmingham, AL</span></td>
+      <td><span style="font-size:16px;">10:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Mon 6/2/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">The Basement</span></td>
+      <td><span style="font-size:16px;">Nashville, TN</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Tues 6/3/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Pilot Light</span></td>
+      <td><span style="font-size:16px;">Knoxville, TN</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Weds 6/4/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">The Odditorium</span></td>
+      <td><span style="font-size:16px;">Asheville, NC</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Fri 6/6/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">The Garage</span></td>
+      <td><span style="font-size:16px;">Winston-Salem, NC</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Sat 6/7/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Slim&#39;s</span></td>
+      <td><span style="font-size:16px;">Raleigh, NC</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Sun 6/8/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Bandito&#39;s</span></td>
+      <td><span style="font-size:16px;">Richmond, VA</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Thurs 6/12/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Niagara - FREE</span></td>
+      <td><span style="font-size:16px;">NYC, NY</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Fri 6/13/14&nbsp;</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Oak and Axe</span></td>
+      <td><span style="font-size:16px;">Biddeford, ME</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Sat 6/14/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">The Press Room</span></td>
+      <td><span style="font-size:16px;">Portsmouth, NH</span></td>
+      <td><span style="font-size:16px;">10:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Weds 6/18/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Green Lantern</span></td>
+      <td><span style="font-size:16px;">Lexington, KY</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Thurs 6/19/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">MOTR Pub - FREE</span></td>
+      <td><span style="font-size:16px;">Cinncinnati, OH</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Fri 6/20/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Canal St. Public House</span></td>
+      <td><span style="font-size:16px;">Dayton, OH</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Sat 6/21/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Ace of Cups</span></td>
+      <td><span style="font-size:16px;">Columbus, OH</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Sun 6/22/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Beachland Ballroom &amp; Tavern</span></td>
+      <td><span style="font-size:16px;">Cleveland, OH&nbsp;</span></td>
+      <td><span style="font-size:16px;">8:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Mon 6/23/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Annabelle&#39;s</span></td>
+      <td><span style="font-size:16px;">Akron, OH</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Fri 6/27/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">New Way&nbsp;</span></td>
+      <td><span style="font-size:16px;">Ferndale, MI</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Sat 6/28/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Mexicains Sans Frontieres</span></td>
+      <td><span style="font-size:16px;">Grand Rapids, MI</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Mon 6/29/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Reggie&#39;s</span></td>
+      <td><span style="font-size:16px;">Chicago, IL</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Weds 7/2/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Music Without Boundaries w/ The Onions</span></td>
+      <td><span style="font-size:16px;">Manitowoc, WI</span></td>
+      <td><span style="font-size:16px;">8:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Thurs 7/3/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">The Crunchy Frog w/ The Onions</span></td>
+      <td><span style="font-size:16px;">Green Bay, WI</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Sat 7/12/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Wyandotte Street Art Fair</span></td>
+      <td><span style="font-size:16px;">Wyandotte, MI</span></td>
+      <td><span style="font-size:16px;">8:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Weds 8/6/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Madelife</span></td>
+      <td><span style="font-size:16px;">Boulder, CO</span></td>
+      <td><span style="font-size:16px;">8:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Thurs 8/7/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">Surfside</span></td>
+      <td><span style="font-size:16px;">Ft. Collins, CO</span></td>
+      <td><span style="font-size:16px;">9:00pm</span></td>
+    </tr>
+    <tr>
+      <td class="date">&nbsp;</td>
+      <td class="date">&nbsp;</td>
+      <td class="date"><span style="font-size:16px;">Fri 8/8/14</span></td>
+      <td class="date">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><span style="font-size:16px;">PFAC Summer Series in the Park</span></td>
+      <td><span style="font-size:16px;">Pinedale, WY</span></td>
+      <td><span style="font-size:16px;">6:00pm</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<div style="text-align: center;"><span style="font-size:16px;"><a href="http://www.facebook.com/TheGhostWolves/info">Click here for past shows (listed under biography) </a><br />
+We do the best we can to make sure all the information on this schedule is correct, but occasionally we miss something or information changes last minute. Please contact the venue to confirm set times and details before you travel.</span></div>
+<br />
+<br />
+<br />
+<span style="font-size:16px;"><iframe allowtransparency="" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/like.php?href=http://www.theghostwolves.com&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" style="border-bottom: medium none; border-left: medium none; width: 450px; height: 21px; overflow: hidden; border-top: medium none; border-right: medium none"></iframe></span></div>
+    
+    <a class="mailto" style="position:absolute; bottom:0px; left:300px;" title="Yeah, do it!" 
+      href="mailto:info@theghostwolves.com">
+    </a>
+    <div style="position:absolute; bottom:5px; right:300px;">
+    <iframe allowtransparency="" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/like.php?href=http://www.theghostwolves.com&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" style="border-bottom: medium none; border-left: medium none; width: 90px; height: 21px; overflow: hidden; border-top: medium none; border-right: medium none"></iframe>
+    </div>
+  </div>
+  
+</body>
+</html>

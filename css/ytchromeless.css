@@ -1,0 +1,37 @@
+
+.video-player 
+{
+  position            : absolute;
+  top                 : 295px;
+}
+.video-controls 
+{
+  position            : relative;
+  width               : 1000px;
+  height              : 600px;
+  top                 : -600px;
+}
+.volume,.view-youtube 
+{
+  visibility          : hidden;
+}
+a.play-pause 
+{
+  position            : relative;
+  width               : 300px;
+  height              : 400px;
+  top                 : 100px;
+  left                : 350px;
+  display             : block;
+  text-indent         : -9999px;
+  overflow            : hidden;
+  background          : url('../img/play.png') no-repeat center center;
+}
+a.playing 
+{
+  background          : url('../img/pause.png') no-repeat -9999px center;
+}
+a.playing:hover 
+{
+  background-position : center center;
+}

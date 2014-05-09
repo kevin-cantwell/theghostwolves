@@ -1,0 +1,138 @@
+body 
+{
+  background          : black no-repeat center top;
+  margin              : 0;
+  padding             : 0;
+}
+a 
+{
+  outline             : none;
+}
+#container 
+{
+  position            : absolute;
+  width               : 1000px; 
+  height              : 1245px;       
+  left                : 50%;
+  margin-left         : -500px;
+}
+ul.menu 
+{
+  list-style          : none;
+  margin              : 0;
+  padding             : 0;
+}
+ul.menu a 
+{
+  position            : absolute;
+  display             : block;
+  background-image    : url('../img/links.png');
+  background-repeat   : no-repeat
+}
+a.music 
+{
+  width               : 74px;
+  height              : 73px;
+  background-position : -6px -1px;
+}
+a.music:hover 
+{
+  background-position : -97px 0px;
+}
+a.news 
+{
+  width               : 54px;
+  height              : 60px;
+  background-position : -16px -116px;
+}
+a.news:hover 
+{
+  background-position : -107px -116px;
+}
+a.bio 
+{
+  width               : 42px;
+  height              : 47px;
+  background-position : -2px -265px;
+}
+a.bio:hover 
+{
+  background-position : -93px -265px;
+}
+a.photos 
+{
+  width               : 62px;
+  height              : 87px;
+  background-position : -25px -344px;
+}
+a.photos:hover 
+{
+  background-position : -116px -344px;
+}
+a.videos 
+{
+  width               : 68px;
+  height              : 60px;
+  background-position : -209px -5px;
+}
+a.videos:hover 
+{
+  background-position : -307px -3px;
+}
+a.fans 
+{
+  width               : 57px;
+  height              : 53px;
+  background-position : -212px -111px;
+}
+a.fans:hover 
+{
+  background-position : -310px -109px;
+}
+a.press 
+{
+  width               : 67px;
+  height              : 63px;
+  background-position : -220px -239px;
+}
+a.press:hover 
+{
+  background-position : -317px -238px;
+}
+a.store 
+{
+  width               : 62px;
+  height              : 66px;
+  background-position : -198px -362px;
+}
+a.store:hover 
+{
+  background-position : -296px -361px;
+}
+.showtimes
+{
+  font-size           : 120%;
+  font-family         : Arial;
+  width               : 500px;
+  height              : 135px;
+  overflow            : auto;
+}
+.showtimes .date
+{
+  font-family         : Impact;
+  font-size           : 130%;
+}
+.showtimes td
+{
+  padding-right       : 10px;
+}
+a.mailto 
+{
+  width               : 285px;
+  height              : 35px;
+  background          : url('../img/mailto-white.png') no-repeat 0px 0px;
+}
+a.mailto:hover 
+{
+  background-position : 0px -35px;
+}
